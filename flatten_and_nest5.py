@@ -26,11 +26,3 @@ num = None
 try:
     num = int(sys.argv[sys.argv.index(__file__) + 1])
     if num < 1 or num > 100:
-        print 'invalid input'
-    else:
-        res = nest(num)
-        print res
-        print '\n\n\n'
-        print flatten(res)
-except:
-    print 'must provide number'
